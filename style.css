@@ -17,6 +17,8 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 65px;
+  background-color: #dcebf8;          /* warna area di balik toolbar Safari; diganti lewat script.js */
+  transition: background-color .35s ease;
 }
 
 body {
@@ -1173,12 +1175,8 @@ h3 {
   }
 
   .dark-footer {
-    min-height: 56px;
-    padding: 0 20px;
-    margin-top: -56px;                  /* menimpa 56px terbawah gambar footer */
-    background: transparent !important;
-    position: relative;
-    z-index: 1;
+    min-height: 64px;
+    padding: 18px 20px;
   }
 
   .letter {
@@ -1189,8 +1187,7 @@ h3 {
   /* HERO */
 
     .archive {
-    min-height: calc(100vh + 40px);     /* cadangan browser lama */
-    min-height: calc(100lvh + 40px);    /* tinggi layar penuh + sedikit lebih, supaya gambar sampai ke bawah */
+    min-height: calc(100svh + 70px);    
     padding-bottom: 0;
     align-items: flex-start;
     text-align: center;
