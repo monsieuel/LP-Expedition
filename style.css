@@ -1175,8 +1175,9 @@ h3 {
   .dark-footer {
     min-height: 56px;
     padding: 0 20px;
-    margin-top: -56px;      /* menimpa 56px terbawah gambar footer */
-    background: transparent;
+    margin-top: -56px;                  /* menimpa 56px terbawah gambar footer */
+    background: transparent !important;
+    position: relative;
     z-index: 1;
   }
 
@@ -1188,8 +1189,8 @@ h3 {
   /* HERO */
 
     .archive {
-    min-height: 100svh;
-    min-height: 100lvh; 
+    min-height: calc(100vh + 40px);     /* cadangan browser lama */
+    min-height: calc(100lvh + 40px);    /* tinggi layar penuh + sedikit lebih, supaya gambar sampai ke bawah */
     padding-bottom: 0;
     align-items: flex-start;
     text-align: center;
@@ -1201,7 +1202,7 @@ h3 {
 
   .hero-content {
     max-width: 100%;
-    padding-top: 24svh;   /* makin besar angkanya, makin turun teksnya */
+    padding-top: 22svh;   /* makin besar angkanya, makin turun teksnya */
   }
 
   .hero-subtitle {
