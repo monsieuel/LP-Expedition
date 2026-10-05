@@ -16,7 +16,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 65px;
+  scroll-padding-top: calc(65px + env(safe-area-inset-top, 0px));
   background-color: #dcebf8;          /* warna area di balik toolbar Safari; diganti lewat script.js */
   transition: background-color .35s ease;
 }
@@ -54,13 +54,13 @@ a {
   top: 0;
   left: 0;
   right: 0;
-  height: 64px;
+  height: calc(64px + env(safe-area-inset-top, 0px));
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  padding: 0 clamp(20px, 5vw, 80px);
+  padding: env(safe-area-inset-top, 0px) clamp(20px, 5vw, 80px) 0;
 
   color: var(--ink);
   background: rgba(255, 255, 255, .16);
@@ -342,6 +342,7 @@ h3 {
   color: #2e6291;
 }
 
+/* catatan kecil: seperti sticky note yang ditempel dengan selotip */
 .hand-note {
   position: relative;
   display: inline-block;
@@ -1083,7 +1084,7 @@ h3 {
 
   .navbar nav {
     position: absolute;
-    top: 64px;
+    top: calc(64px + env(safe-area-inset-top, 0px));
     left: 0;
     right: 0;
 
@@ -1198,14 +1199,14 @@ h3 {
   }
 
   .mail-card {
-    width: min(270px, 100%);   
+    width: min(270px, 100%);     /* selebar polaroid di bagian lain */
     min-height: 0;
     padding: 18px 16px 14px;
   }
 
   .dark-footer {
     min-height: 64px;
-    padding: 18px 20px;
+    padding: 18px 20px calc(18px + env(safe-area-inset-bottom, 0px));
   }
 
   .letter {
@@ -1216,8 +1217,8 @@ h3 {
   /* HERO */
 
     .archive {
-    min-height: calc(100vh + 40px);     /* cadangan browser lama */
-    min-height: calc(100svh + 40px);    /* lebih tinggi dari layar, supaya gambar tetap menutup sampai di balik toolbar */
+    min-height: calc(100vh + 100px);     /* cadangan browser lama */
+    min-height: calc(100svh + 100px);    /* lebih tinggi dari layar, supaya gambar tetap menutup sampai di balik toolbar */
     padding-bottom: 0;
     align-items: flex-start;
     text-align: center;
@@ -1283,7 +1284,7 @@ h3 {
   /* FOOTER / MAILS */
 
     .mails {
-    padding-bottom: 200px;   
+    padding-bottom: 240px;   /* ruang agar karakter di bawah tidak tertutup kartu terakhir */
 
     background:
       url("images/footer mobile.png") center bottom / cover no-repeat,
@@ -1291,7 +1292,7 @@ h3 {
   }
 
 
-  /*  UKURAN TEKS & JARAK (mobile)  */
+  /* ---------- UKURAN TEKS & JARAK (mobile) ---------- */
 
   .logo img {
     height: 54px;
@@ -1327,6 +1328,7 @@ h3 {
     font-size: 16px;
   }
 
+  /* kutipan: di mobile pakai hiasan bintang di atas, bukan garis kiri */
   .intro-copy .quote {
     max-width: 290px;
     margin: 0 auto 26px;
@@ -1359,7 +1361,8 @@ h3 {
   }
 
   .thing-card {
-    width: min(270px, 100%);     
+    width: min(270px, 100%);     /* sama dengan polaroid Glimpse of Us di mobile */
+    padding: 12px 12px 26px;
   }
 
   .thing-card h3 {
@@ -1439,7 +1442,6 @@ h3 {
     font-size: 18px;
   }
 
-  /* surat (modal) */
   .letter h2 {
     font-size: 34px;
   }
