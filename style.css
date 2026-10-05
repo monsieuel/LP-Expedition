@@ -243,7 +243,7 @@ h3 {
 }
 
 .hero-content {
-  padding-top: 40px;
+  padding-top: 100px;
   max-width: 440px;
 }
 
@@ -1222,13 +1222,15 @@ h3 {
     text-align: center;
 
     background:
-      url("images/hero mobile.png") center bottom / cover no-repeat,
-      #0f2351;
+    url("images/hero mobile.png") center center / cover no-repeat,
+    #0f2351;
+
+    background-position: center -75px;
   }
 
   .hero-content {
     max-width: 100%;
-    padding-top: 22svh;   /* makin besar angkanya, makin turun teksnya */
+    padding-top: 30svh;   /* makin besar angkanya, makin turun teksnya */
   }
 
   .hero-subtitle {
