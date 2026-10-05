@@ -29,6 +29,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const navLinks = document.querySelectorAll(".navbar nav a");
   const darkSectionIds = ["archive", "mails"];
 
+  // warna kanvas halaman (area di balik status bar / toolbar Safari) mengikuti section yang aktif
+  const pageColors = { archive: "#0f2351", mails: "#0e2d55" };
+  const lightPageColor = "#dcebf8";
+
   const sectionObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (!entry.isIntersecting) return;
@@ -41,6 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       navbar.classList.toggle("on-dark", darkSectionIds.includes(entry.target.id));
+      document.documentElement.style.backgroundColor = pageColors[entry.target.id] || lightPageColor;
     });
   }, {
     rootMargin: "-40% 0px -50% 0px"
