@@ -1197,7 +1197,7 @@ h3 {
   }
 
   .mail-card {
-    width: min(270px, 100%);     /* selebar polaroid di bagian lain */
+    width: min(270px, 100%);     
     min-height: 0;
     padding: 18px 16px 14px;
   }
@@ -1222,13 +1222,13 @@ h3 {
     text-align: center;
 
     background:
-    url("images/hero mobile.png") right bottom / cover no-repeat,
+    url("images/hero mobile.png") right calc(100% + 40px) / cover no-repeat,
     #0f2351;
   }
 
   .hero-content {
     max-width: 100%;
-    padding-top: 30svh;   /* makin besar angkanya, makin turun teksnya */
+    padding-top: 30svh;   
   }
 
   .hero-subtitle {
