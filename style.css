@@ -1214,18 +1214,16 @@ h3 {
 
   /* HERO */
 
-    .archive {
-    min-height: calc(100vh + 100px);     /* cadangan browser lama */
-    min-height: calc(100svh + 100px);    /* lebih tinggi dari layar, supaya gambar tetap menutup sampai di balik toolbar */
+        .archive {
+    min-height: max(100vh, 560px);      
+    min-height: max(100svh, 560px);      
     padding-bottom: 0;
     align-items: flex-start;
     text-align: center;
 
     background:
-    url("images/hero mobile.png") center center / cover no-repeat,
+    url("images/hero mobile.png") right bottom / cover no-repeat,
     #0f2351;
-
-    background-position: center -75px;
   }
 
   .hero-content {
