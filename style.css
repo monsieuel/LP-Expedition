@@ -17,7 +17,6 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: calc(65px + env(safe-area-inset-top, 0px));
-  background-color: #dcebf8;          /* warna area di balik toolbar Safari; diganti lewat script.js */
   transition: background-color .35s ease;
 }
 
@@ -445,7 +444,7 @@ h3 {
 }
 
 .thing-card {
-  width: min(330px, 100%);       /* ukuran polaroid, sama seperti Glimpse of Us */
+  width: min(330px, 100%);       
   justify-self: center;
   padding: 12px 12px 44px;
   position: relative;
@@ -1282,7 +1281,7 @@ h3 {
   /* FOOTER / MAILS */
 
     .mails {
-    padding-bottom: 240px;   /* ruang agar karakter di bawah tidak tertutup kartu terakhir */
+    padding-bottom: 240px;  
 
     background:
       url("images/footer mobile.png") center bottom / cover no-repeat,
@@ -1290,7 +1289,7 @@ h3 {
   }
 
 
-  /* ---------- UKURAN TEKS & JARAK (mobile) ---------- */
+  /* UKURAN TEKS & JARAK (mobile) */
 
   .logo img {
     height: 54px;
@@ -1326,7 +1325,6 @@ h3 {
     font-size: 16px;
   }
 
-  /* kutipan: di mobile pakai hiasan bintang di atas, bukan garis kiri */
   .intro-copy .quote {
     max-width: 290px;
     margin: 0 auto 26px;
@@ -1359,7 +1357,7 @@ h3 {
   }
 
   .thing-card {
-    width: min(270px, 100%);     /* sama dengan polaroid Glimpse of Us di mobile */
+    width: min(270px, 100%);     
     padding: 12px 12px 26px;
   }
 
@@ -1454,12 +1452,6 @@ h3 {
   }
 }
 
-/* ==========================================================
-   DESKTOP 100% = TAMPILAN 80%
-   Semua ukuran px di desktop diperkecil jadi 80%.
-   Hanya berlaku di layar > 900px; mobile tidak terpengaruh.
-   Ubah SCALE di sini kalau mau: hitung ulang = nilai asli x 0.8
-   ========================================================== */
 
 @media (min-width: 901px) {
 
