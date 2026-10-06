@@ -17,6 +17,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: calc(65px + env(safe-area-inset-top, 0px));
+  background-color: #dcebf8;        
   transition: background-color .35s ease;
 }
 
@@ -444,7 +445,7 @@ h3 {
 }
 
 .thing-card {
-  width: min(330px, 100%);       
+  width: min(330px, 100%);       /* ukuran polaroid, sama seperti Glimpse of Us */
   justify-self: center;
   padding: 12px 12px 44px;
   position: relative;
@@ -1180,8 +1181,65 @@ h3 {
     min-height: 0;
   }
 
+  /* panah kiri/kanan slider: panah saja, posisi tetap (tidak naik-turun) */
   .slider-arrow {
-    display: none;
+    top: 170px;                 /* tetap di tengah foto polaroid, tidak ikut tinggi kartu */
+    width: 40px;
+    height: 56px;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+    font-size: 0;               /* karakter ‹ › disembunyikan, diganti chevron dari CSS */
+    opacity: .65;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    transition: opacity .2s;
+  }
+
+  .slider-arrow::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-top: 2.5px solid #32638e;
+    border-left: 2.5px solid #32638e;
+    border-radius: 2px;
+    filter: drop-shadow(0 1px 3px rgba(255, 255, 255, .9));
+    transition: transform .2s;
+  }
+
+  .slider-arrow.left::before {
+    transform: rotate(-45deg);
+  }
+
+  .slider-arrow.right::before {
+    transform: rotate(135deg);
+  }
+
+  .slider-arrow:hover {
+    background: none;
+    transform: translateY(-50%);
+  }
+
+  /* saat disentuh: lebih jelas + bergeser sedikit ke arah panah */
+  .slider-arrow:active {
+    opacity: 1;
+  }
+
+  .slider-arrow.left:active::before {
+    transform: translateX(-3px) rotate(-45deg);
+  }
+
+  .slider-arrow.right:active::before {
+    transform: translateX(3px) rotate(135deg);
+  }
+
+  .slider-arrow.left {
+    left: 0;
+  }
+
+  .slider-arrow.right {
+    right: 0;
   }
 
   .playlist-cover {
@@ -1221,7 +1279,7 @@ h3 {
     text-align: center;
 
     background:
-    url("images/hero mobile.png") right calc(100% + 40px) / cover no-repeat,
+    url("images/hero mobile.png") right bottom / cover no-repeat,
     #0f2351;
   }
 
@@ -1281,7 +1339,7 @@ h3 {
   /* FOOTER / MAILS */
 
     .mails {
-    padding-bottom: 240px;  
+    padding-bottom: 240px;   /* ruang agar karakter di bawah tidak tertutup kartu terakhir */
 
     background:
       url("images/footer mobile.png") center bottom / cover no-repeat,
@@ -1289,7 +1347,7 @@ h3 {
   }
 
 
-  /* UKURAN TEKS & JARAK (mobile) */
+  /* ---------- UKURAN TEKS & JARAK (mobile) ---------- */
 
   .logo img {
     height: 54px;
@@ -1325,6 +1383,7 @@ h3 {
     font-size: 16px;
   }
 
+  /* kutipan: di mobile pakai hiasan bintang di atas, bukan garis kiri */
   .intro-copy .quote {
     max-width: 290px;
     margin: 0 auto 26px;
@@ -1357,7 +1416,7 @@ h3 {
   }
 
   .thing-card {
-    width: min(270px, 100%);     
+    width: min(270px, 100%);     /* sama dengan polaroid Glimpse of Us di mobile */
     padding: 12px 12px 26px;
   }
 
@@ -1452,6 +1511,12 @@ h3 {
   }
 }
 
+/* ==========================================================
+   DESKTOP 100% = TAMPILAN 80%
+   Semua ukuran px di desktop diperkecil jadi 80%.
+   Hanya berlaku di layar > 900px; mobile tidak terpengaruh.
+   Ubah SCALE di sini kalau mau: hitung ulang = nilai asli x 0.8
+   ========================================================== */
 
 @media (min-width: 901px) {
 
