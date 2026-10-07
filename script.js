@@ -185,8 +185,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         <p>
          kalau boleh jujur, tahun ini adalah tahun yang cukup berat. 
-         gadeh.. berat banget. banyak hal yang terjadi, ga cuma karena faktor eksternal, tapi sedikit banyak juga yang berasal dari internal diri sendiri. 
-         tapi karena ini kamu, nanti aku bersedia untuk cerita. 
+         gadeh.. berat banget. banyak hal yang terjadi, ga cuma karena faktor eksternal, tapi sedikit banyak juga yang berasal dari internal diri sendiri.
         </p>
 
         <p>
