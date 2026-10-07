@@ -259,7 +259,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         <p>
           hal konyol lainnya adalah, it's funny how you keep shipping me with everyone, when the truth is, you're the one i've been in love with. 
-          dan hal yang lebih aneh lagi adalah, bukannya bete karena diledekin sama orang lain, tapi malah uring-uringan sendiri why anyone else but not you?
+          dan hal yang lebih aneh lagi adalah bukannya bete karena diledekin sama orang lain tapi malah uring-uringan sendiri. why anyone else but not you?
         </p>
 
         <p>
