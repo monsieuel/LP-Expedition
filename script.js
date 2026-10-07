@@ -247,8 +247,14 @@ document.addEventListener("DOMContentLoaded", () => {
           somehow, you became more important to me than i ever expected. 
           i tried to ignore it, to keep things the same between us, convincing myself that it was just a phase. 
           but the feeling only grew stronger. 
-          every time i tried to push the thoughts away, somehow, you pulled me right back in. 
-          and now, i can no longer hide it anymore.
+        </p>
+
+        <p>
+          it was supposed to be a silly little crush, nothing serious, nothing i needed to think too much about. 
+          but then suddenly, i started thinking of songs that reminded me of you. 
+          you started showing up in my dreams for absolutely no reason. setiba-tiba itu.. 
+          and somehow, i'd find myself getting ridiculously restless whenever you weren't around.
+          little things that shouldn't have meant anything somehow started meaning everything.
         </p>
 
         <p>
@@ -257,10 +263,17 @@ document.addEventListener("DOMContentLoaded", () => {
         </p>
 
         <p>
+          and then i realized, i was really in love with you. 
+          and it scared me. 
+          every time i tried to push the thoughts away, somehow, you pulled me right back in. 
+          and now, i can no longer hide it anymore.
+        </p>
+
+        <p>
           ya itulah... akupun gatau exact-nya kapan. 
           but i can say for sure, this feeling comes with a ridiculous amount of energy. 
-          sampai aku sendiri kewalahan mati-matian nahan trying not to fall for you. 
-          tapi apalah daya gwehj semakin ditahan malah semakin kepikiran.
+          sampai aku sendiri kewalahan mati-matian nahan, trying not to fall for you. 
+          tapi apalah dayaku makin ditahan malah makin kepikiran.
         </p>
 
         <p>
@@ -282,7 +295,6 @@ document.addEventListener("DOMContentLoaded", () => {
           and that's all i wanted.
           maaf kalo selama ini bikin bingung :((((
         </p>
-
         
       `
     },
