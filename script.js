@@ -201,7 +201,6 @@ document.addEventListener("DOMContentLoaded", () => {
           bukannya bermaksud tarik ulur, tapi ril masih takut untuk membuka diri dan percaya sama orang.
           but please know that i do appreciate you, more than i probably show. 
           dan karena orangnya sekarang kamu, nanti aku coba perbaiki biar lebih baik kedepannya ya. 
-          maap kalo kemarenan bikin bingung..
         </p>
        
         <p>
@@ -292,7 +291,7 @@ document.addEventListener("DOMContentLoaded", () => {
           i'm a little scared right know yk.. and you don't have to say anything right away. 
           i just wanted you to know what has been sitting in my heart for a while.
           and that's all i wanted.
-          maaf kalo selama ini bikin bingung :((((
+          maaf kalo selama ini bikin bingung :(
         </p>
         
       `
